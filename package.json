@@ -1,0 +1,35 @@
+{
+  "name": "@volta-oss/photo-shotlist-maker",
+  "version": "3.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Generate practical photo shotlists for restaurants, services, nonprofits, and founder-led teams.",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 4173",
+    "validate": "node --test",
+    "certify": "node --test test/v3.test.js",
+    "test:all": "node --test"
+  },
+  "keywords": [
+    "digital-equity",
+    "local-first",
+    "marketing-content",
+    "oss",
+    "v3-production",
+    "volta"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volta-npo/26-photo-shotlist-maker.git"
+  },
+  "homepage": "https://volta-npo.github.io/26-photo-shotlist-maker/",
+  "bugs": {
+    "url": "https://github.com/volta-npo/26-photo-shotlist-maker/issues"
+  },
+  "author": "Volta OSS Division <volta.npo@gmail.com>",
+  "engines": {
+    "node": ">=20"
+  }
+}
