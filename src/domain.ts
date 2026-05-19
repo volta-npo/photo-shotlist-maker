@@ -76,7 +76,11 @@ export const domain = {
     "Consent status tracked",
     "Lighting/location warnings reviewed",
     "Filename plan generated",
-    "Printable shoot brief exported"
+    "Printable shoot brief exported",
+    "Shot-type preset selected",
+    "Person-release status tracked",
+    "Lighting/location risk scored",
+    "Asset manifest schema completed"
   ],
   "artifacts": [
     "Industry shotlist",
@@ -88,5 +92,32 @@ export const domain = {
     "Consent for identifiable people",
     "Hero/detail/team/location mix required"
   ],
-  "sampleClient": "Oak & Olive Cafe"
+  "sampleClient": "Oak & Olive Cafe",
+  "modules": [
+    { "name": "Shot taxonomy builder", "description": "Shot-type presets grouped by hero, detail, people, environment, process, and social formats." },
+    { "name": "Consent tracker", "description": "Person-release status, guardian approval, usage window, and revocation notes per shot." },
+    { "name": "Location and lighting risk", "description": "Weather, permission, accessibility, lighting, and backup-plan checks before shoot day." },
+    { "name": "Asset manifest", "description": "Filename schema, delivery status, channel crop, alt text, and license metadata for every deliverable." }
+  ],
+  "saas": {
+    "playbooks": [
+      "Shoot-day call sheet workflow",
+      "Consent and release collection process",
+      "Location-risk mitigation checklist",
+      "Post-shoot asset manifest QA"
+    ],
+    "automations": [
+      "Filename manifest export",
+      "Missing consent warnings",
+      "Lighting/location risk scoring",
+      "Channel crop readiness tracker"
+    ],
+    "revenueModel": "Per-shoot workspace with add-on asset manifest QA and client approval portals",
+    "integrationTargets": [
+      "Google Drive asset folders",
+      "Dropbox transfer packs",
+      "Airtable content calendar",
+      "Meta/Google Business Profile crops"
+    ]
+  }
 };
