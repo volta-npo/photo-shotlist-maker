@@ -11,6 +11,10 @@ export const domain = {
         "Production Readiness"
     ],
     "fields": [
+        { "id": "shoot-date", "label": "Shoot date", "type": "date", "sample": "2026-04-18", "placeholder": "Enter shoot date" },
+        { "id": "crew-lead", "label": "Crew lead", "type": "text", "sample": "Student photo pod A", "placeholder": "Enter crew lead" },
+        { "id": "delivery-sla", "label": "Delivery SLA", "type": "text", "sample": "48-hour proof gallery", "placeholder": "Enter delivery SLA" },
+        { "id": "asset-count-target", "label": "Asset count target", "type": "number", "sample": 36, "placeholder": "Enter asset count target" },
         {
             "id": "organization-client",
             "label": "Organization / client",
@@ -80,26 +84,118 @@ export const domain = {
         "Shot-type preset selected",
         "Person-release status tracked",
         "Lighting/location risk scored",
-        "Asset manifest schema completed"
+        "Asset manifest schema completed",
+        "Shoot workspace provisioned",
+        "Crew roles and backups assigned",
+        "Shot dependency map completed",
+        "Client approval gallery planned",
+        "Asset delivery SLA set",
+        "Retake queue workflow configured",
+        "Usage-right expiration reminders created",
+        "Recurring content refresh offered",
     ],
     "artifacts": [
         "Industry shotlist",
         "Prop checklist",
-        "File naming plan"
+        "File naming plan",
+        "Shoot operations dashboard",
+        "Client approval gallery manifest",
+        "Retake and refresh plan",
     ],
     "checks": [
         "Each shot needs purpose/channel",
         "Consent for identifiable people",
-        "Hero/detail/team/location mix required"
+        "Hero/detail/team/location mix required",
+        "No identifiable subject ships without release status",
+        "Retake requests need owner-visible status",
+        "Asset license and channel crop must travel with manifest",
     ],
     "sampleClient": "Oak & Olive Cafe",
     "modules": [
-        { "name": "Shot taxonomy builder", "description": "Shot-type presets grouped by hero, detail, people, environment, process, and social formats." },
-        { "name": "Consent tracker", "description": "Person-release status, guardian approval, usage window, and revocation notes per shot." },
-        { "name": "Location and lighting risk", "description": "Weather, permission, accessibility, lighting, and backup-plan checks before shoot day." },
-        { "name": "Asset manifest", "description": "Filename schema, delivery status, channel crop, alt text, and license metadata for every deliverable." }
+        { "name": "Shoot operations dashboard", "description": "Schedule, location, role, risk, and progress board for planning and running client shoots." },
+        { "name": "Approval gallery manifest", "description": "Client-facing proof selections with consent state, usage scope, crop variants, alt text, and delivery status." },
+        { "name": "Retake queue", "description": "Issue triage for missing shots, blurry assets, consent blockers, lighting problems, and client-requested redos." },
+        { "name": "Recurring content planner", "description": "Quarterly or monthly refresh scheduling tied to seasonal promotions, new staff, products, and events." },
+        { "name": "Crew capacity scheduler", "description": "Assigns photographers, assistants, reviewers, and editors with backup coverage and due dates." },
+        { "name": "Rights renewal monitor", "description": "Tracks usage windows, revocations, renewal prompts, and blocked channels per image." }
     ],
     "saas": {
+        "customerSegments": [
+            "Student photo pods executing structured field shoots",
+            "Small businesses needing repeatable web/social asset capture",
+            "Nonprofits documenting programs and community events",
+            "Marketing mentors reviewing consent-safe photo delivery"
+        ],
+        "pricingTiers": [
+            "Free: single shotlist and printable plan",
+            "Shoot Pro: approval gallery, asset manifest, and retake queue",
+            "Studio Team: crew scheduling, recurring shoots, and rights renewal alerts",
+            "Agency: multi-client content calendar and white-label gallery exports"
+        ],
+        "onboardingChecklist": [
+            "Create client shoot workspace",
+            "Select industry and channel presets",
+            "Assign crew lead and owner approver",
+            "Collect model/location release requirements",
+            "Set delivery SLA and retake policy"
+        ],
+        "successMetrics": [
+            "Target asset count reached with approved manifest",
+            "100% identifiable people have release status",
+            "All hero/detail/team/location categories covered",
+            "Client approval gallery exported before delivery SLA"
+        ],
+        "dashboards": [
+            "Shoot-day readiness",
+            "Consent and rights blockers",
+            "Asset delivery pipeline",
+            "Retake and refresh backlog"
+        ],
+        "dataModel": [
+            "ShootWorkspace",
+            "ShotPreset",
+            "LocationRisk",
+            "ConsentRelease",
+            "AssetManifestItem",
+            "GalleryApproval",
+            "RetakeRequest",
+            "UsageWindow"
+        ],
+        "permissions": [
+            "Crew lead: schedule and shot planning",
+            "Photographer: asset manifest updates",
+            "Owner: approval gallery decisions",
+            "Mentor: certification and release review"
+        ],
+        "compliance": [
+            "Release state required for people assets",
+            "Location permission evidence retained",
+            "Usage scope follows approved channels",
+            "Revoked assets excluded from exports"
+        ],
+        "lifecycle": [
+            "Plan",
+            "Schedule",
+            "Capture",
+            "Review",
+            "Approve",
+            "Deliver",
+            "Retake",
+            "Refresh"
+        ],
+        "retentionSignals": [
+            "Upcoming rights expiration",
+            "Unapproved gallery items",
+            "Recurring shoot window approaching",
+            "Retake queue aging beyond SLA"
+        ],
+        "exportChannels": [
+            "Printable call sheet",
+            "Asset manifest CSV",
+            "Client approval gallery markdown",
+            "Alt text packet",
+            "Retake backlog"
+        ],
         "playbooks": [
             "Shoot-day call sheet workflow",
             "Consent and release collection process",
