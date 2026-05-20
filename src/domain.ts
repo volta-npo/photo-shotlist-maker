@@ -117,7 +117,7 @@ export const domain = {
     {"name": "Retake queue", "description": "Issue triage for missing shots, blurry assets, consent blockers, lighting problems, and client-requested redos."},
     {"name": "Recurring content planner", "description": "Quarterly or monthly refresh scheduling tied to seasonal promotions, new staff, products, and events."},
     {"name": "Crew capacity scheduler", "description": "Assigns photographers, assistants, reviewers, and editors with backup coverage and due dates."},
-    {"name": "Rights renewal monitor", "description": "Tracks usage windows, revocations, renewal prompts, and blocked channels per image."}
+    {"name": "Rights renewal monitor", "description": "Tracks usage windows, revocations, renewal reminders, and blocked channels per image."}
   ],
   "saas": {
     "customerSegments": [
